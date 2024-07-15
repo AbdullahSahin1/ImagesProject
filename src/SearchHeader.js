@@ -3,7 +3,7 @@ function SearchHeader({search}) {
     const [valueInput, setValue] = useState('');
     const handleFormSubmit = (e) =>{
         e.preventDefault();
-        search("can")
+        search(valueInput)
     }
     const handleChange = (e) => {
         setValue(e.target.value)
