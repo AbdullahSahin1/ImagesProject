@@ -1,4 +1,6 @@
+import {useState} from "react"
 function SearchHeader({search}) {
+    const [value, setValue] = useState('');
     const handleFormSubmit = (e) =>{
         e.preventDefault();
         search("can")
