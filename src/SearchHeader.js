@@ -1,7 +1,11 @@
-function SearchHeader() {
+function SearchHeader({search}) {
+      const handleFormSubmit = (e) =>{
+        e.preventDefault();
+        search("can")
+    }
     return ( 
         <div className="SearchDiv">
-            <form>
+            <form onSubmit = {handleFormSubmit}>
                 <label>Ne arıyorsunuz</label>
                 <input/>
             </form>
