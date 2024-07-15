@@ -1,5 +1,5 @@
 function SearchHeader({search}) {
-      const handleFormSubmit = (e) =>{
+    const handleFormSubmit = (e) =>{
         e.preventDefault();
         search("can")
     }
