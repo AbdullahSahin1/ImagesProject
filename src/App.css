@@ -1,0 +1,17 @@
+.App{
+  margin: 10px;
+}
+.SearchDiv{
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+.SearchDiv form{
+  display: flex;
+  flex-direction:column ;
+}
+.SearchDiv form input{
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
