@@ -5,11 +5,14 @@ function SearchHeader({search}) {
         e.preventDefault();
         search("can")
     }
+    const handleChange = (e) => {
+        setValue(e.target.value)
+    }
     return ( 
         <div className="SearchDiv">
             <form onSubmit = {handleFormSubmit}>
                 <label>Ne arıyorsunuz</label>
-                <input value={valueInput}/>
+                <input value={valueInput} onChange={handleChange}/>
             </form>
         </div>
      );
